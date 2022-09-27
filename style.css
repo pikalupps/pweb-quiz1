@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: lightskyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 70%;
+  margin: auto;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  background-color: whitesmoke;
+  border-radius: 50px;
+}
+
+/* Header */
+
+section.header {
+  text-align: center;
+  margin-bottom: 4rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+section.header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+section.header p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+div.canvas{
+  padding: 3rem;
+}
+
+/* Form */
+
+section.form {
+  margin-bottom: 3rem;
+}
+
+section.form div.form-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+section.form div.form-input label,
+section.form div.form-input input {
+  flex: 1;
+}
+
+section.form div.form-input label {
+  text-align: start;
+  font-weight: 500;
+}
+
+section.form div.form-input input {
+  padding: 0.75rem;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px dotted black;
+}
+
+.bank-info{
+  font-weight: bold;
+}
+
+.bank-info ul li{
+  display: flex;
+}
+
+.bukti{
+  border: 2px solid black;
+  border-radius: 25px;
+  background-color: white;
+  padding-left: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-right: 40%;
+}
+
+
+@media only screen and (max-width: 992px) {
+  body {
+      padding: 2rem;
+  }
+  main {
+      width: 100%;
+  }
+  section.header h1 {
+      font-size: 2rem;
+  }
+  section.header p {
+      font-size: 1.25rem;
+      font-weight: 300;
+  }    
+  section.form div.form-input {
+      flex-direction: column;
+  }
+  section.form div.form-input label {
+      text-align: start;
+      margin-right: auto;
+  }
+  section.form div.form-input input {
+      width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  section.signature {
+      display: inline-block;
+  }
+  section.signature div.signature-1 {
+      margin-bottom: 5rem;
+  }
+}
